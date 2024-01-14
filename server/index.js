@@ -2,8 +2,11 @@ import express from 'express';
 import dotenv from 'dotenv';
 dotenv.config();
 import cors from 'cors';
+import dbConnect from './db/dbConnect.js';
 
 const port = process.env.PORT;
+
+dbConnect();
 
 const app = express();
 
