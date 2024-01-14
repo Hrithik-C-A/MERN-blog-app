@@ -6,6 +6,7 @@ import dbConnect from './db/dbConnect.js';
 
 const port = process.env.PORT;
 
+//Database connection
 dbConnect();
 
 const app = express();
