@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 import cors from 'cors';
 import dbConnect from './config/dbConnect.js';
+import { errorHandler, notFound } from './middlewares/errorMiddleware.js';
 
 const port = process.env.PORT;
 
@@ -23,6 +24,10 @@ app.use(express.json());
 app.get('/', (req, res) => {
     res.send('Server is running!');
 })
+
+//Error handling middlewares
+app.use(notFound);
+app.use(errorHandler);
 
 app.listen(port, () => {
     console.log(`App is running on ${port}`);
