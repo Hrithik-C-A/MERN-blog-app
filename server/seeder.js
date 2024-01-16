@@ -2,7 +2,7 @@ import dotenv from 'dotenv';
 import User from './models/userModel.js'
 import Category from './models/categoryModel.js';
 import Post from './models/postModel.js';
-import dbConnect from './db/dbConnect.js';
+import dbConnect from './config/dbConnect.js';
 import usersData from './data/users.js';
 import categoriesData from './data/categories.js'
 import postsData from './data/posts.js';
