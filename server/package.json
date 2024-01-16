@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon index.js",
     "data:insert": "node seeder.js",
-    "data:delete": "noder seeder.js -d"
+    "data:delete": "node seeder.js -d"
   },
   "keywords": [],
   "author": "Hrithik C A",
